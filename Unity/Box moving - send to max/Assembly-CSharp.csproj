@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0C510842-2B13-EA39-EE2D-656139D29755}</ProjectGuid>
+    <ProjectGuid>{373CD196-421D-B269-59AE-49C257A3173E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -102,6 +102,7 @@
      <Compile Include="Assets\OscSimpl\Base\OscBundle.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscMessage.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscPool.cs" />
+     <Compile Include="Assets\OscSimpl\DragObject.cs" />
      <Compile Include="Assets\OscSimpl\Examples\01 GettingStarted\GettingStartedReceiving.cs" />
      <Compile Include="Assets\OscSimpl\Examples\02 ArgumentTypes\ArgumentTypeTest.cs" />
      <Compile Include="Assets\OscSimpl\Examples\03 RuntimeUI\Scripts\TestMessageGenerator.cs" />
@@ -125,31 +126,31 @@
      <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscOutRuntimeUI.cs" />
      <None Include="Assets\OscSimpl\Docs\Versions.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/simonrostami/Dropbox/Medialogy - BA/5th semester/P5 material/UdpToOsc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/simonrostami/Documents/Processing/serialreceive/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
