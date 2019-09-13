@@ -14,26 +14,31 @@ public class RecieveTracks : MonoBehaviour
     void Start()
     {
         if (!_oscIn) _oscIn = gameObject.AddComponent<OscIn>();
-        _oscIn.Open(9010);
+        _oscIn.Open(7000);
+        _oscIn.Map(address1, OnTest1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        _oscIn.Map(address1, OnTest1);
 
     }
 
     void OnTest1(OscMessage incomingMessage)
     {
-        if (incomingMessage.TryGet(0, ref _incomingText))
+
+        for (int i = 0; i < incomingMessage.Count(); i++)
         {
+            if (incomingMessage.TryGet(i, ref _incomingText))
+            {
+                Debug.Log(_incomingText);
+            }
+        }
             // We have now received a string that will only be
             // recreated (generate garbage) if it changes.
 
             // However, this Debug.Log call will generate garbage. Lots of it ;)
-            Debug.Log(_incomingText);
-        }
+            
 
         // OPTIMISATION #4
         // Always recycle messages when you handle them yourself.
