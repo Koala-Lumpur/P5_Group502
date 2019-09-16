@@ -129,6 +129,7 @@
     <Compile Include="Assets\OscSimpl\Send.cs" />
     <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscInRuntimeUI.cs" />
     <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscOutRuntimeUI.cs" />
+    <Compile Include="Assets\Scripts\TextLook.cs" />
     <Compile Include="Assets\Scripts\Tracks\GetTrack.cs" />
     <Compile Include="Assets\Scripts\Tracks\RecieveTracks.cs" />
     <Compile Include="Assets\Scripts\Tracks\SendTrack.cs" />
