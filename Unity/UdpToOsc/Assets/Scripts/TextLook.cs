@@ -15,6 +15,6 @@ public class TextLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Camera.main.transform);
+        transform.LookAt(transform.position - Camera.main.transform.position);
     }
 }
