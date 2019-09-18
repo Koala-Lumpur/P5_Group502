@@ -11,6 +11,7 @@ public class RecieveTracks : MonoBehaviour
 
     string _incomingText;
     bool first = true;
+    int numOfTracks = 0;
 
     public List<string> tracks = new List<string>();
 
@@ -43,11 +44,13 @@ public class RecieveTracks : MonoBehaviour
                     tracks.Add(_incomingText);
                     InstTrack(i);
                     instTracks[i].transform.Find("Name").GetComponent<TextMesh>().text = tracks[i];
+                    numOfTracks++;
                 } else
                 {
                     if (tracks[i] != _incomingText && _incomingText != null)
                     {
                         tracks[i] = _incomingText;
+                        instTracks[i].transform.Find("Name").GetComponent<TextMesh>().text = tracks[i];
                     }
                     else if (tracks.Count() > incomingMessage.Count())
                     {
@@ -56,6 +59,7 @@ public class RecieveTracks : MonoBehaviour
                             Destroy(instTracks[j]);
                             instTracks.RemoveAt(j);
                             tracks.RemoveAt(j);
+                            numOfTracks--;
                         }
                     }
                     else if(tracks.Count() < incomingMessage.Count())
@@ -63,6 +67,7 @@ public class RecieveTracks : MonoBehaviour
                         tracks.Add(_incomingText);
                         InstTrack(i);
                         instTracks[i].transform.Find("Name").GetComponent<TextMesh>().text = tracks[i];
+                        numOfTracks++;
                     }
 
                     if (tracks[0] == tracks[1] && tracks.Count() > 1)
@@ -90,7 +95,7 @@ public class RecieveTracks : MonoBehaviour
 
     void InstTrack(int i)
     {
-        GameObject newTrack = (GameObject)Instantiate(trackPrefab, new Vector3(-10 + i, 1, 0), Quaternion.identity);
+        GameObject newTrack = (GameObject)Instantiate(trackPrefab, new Vector3(-10 + 2*numOfTracks, 1, 0), Quaternion.identity);
         instTracks.Add(newTrack);
     }
 }

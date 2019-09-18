@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _oscIn: {fileID: 0}
   tracks: []
-  trackPrefab: {fileID: 198152757777591079, guid: bd0f2f7cd9ab7764e8ae8db83c17e2bd,
+  trackPrefab: {fileID: 4582760256064444274, guid: bd0f2f7cd9ab7764e8ae8db83c17e2bd,
     type: 3}
   instTracks: []
 --- !u!1 &1092244830
@@ -305,10 +305,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092244830}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.09718752, y: -0.0037938708, z: 0.038821958, w: 0.9945014}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.163, y: 0, z: 4.471}
