@@ -102,6 +102,7 @@
      <Compile Include="Assets\OscSimpl\Base\OscBundle.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscMessage.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscPool.cs" />
+     <Compile Include="Assets\OscSimpl\CalculateAngle.cs" />
      <Compile Include="Assets\OscSimpl\DragObject.cs" />
      <Compile Include="Assets\OscSimpl\Examples\01 GettingStarted\GettingStartedReceiving.cs" />
      <Compile Include="Assets\OscSimpl\Examples\02 ArgumentTypes\ArgumentTypeTest.cs" />

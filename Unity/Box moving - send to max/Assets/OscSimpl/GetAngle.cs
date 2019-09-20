@@ -19,23 +19,34 @@ public class GetAngle : MonoBehaviour
 		if (!target) return;
 
 		var myPos = transform.position;
-		myPos.y = 0;
+		// myPos.y = 0;
 
 		var targetPos = target.position;
-		targetPos.y = 0;
+		// targetPos.y = 0;
 
 		Vector3 toOther = (myPos - targetPos).normalized;
 		Vector3 targetDir = target.position - transform.position;
 
 
-		angle = Mathf.Atan2(toOther.z, toOther.x) * Mathf.Rad2Deg + 180;
+		angle = ((Mathf.Atan2(toOther.z, toOther.x) * Mathf.Rad2Deg) + 360) % 360;
 		angleOpt = atan2Approximation(toOther.z, toOther.x) * Mathf.Rad2Deg + 180;
-		yAngle = Vector3.Angle(targetDir, transform.forward);
+		
+		
+		
+		
+		yAngle = ((Mathf.Atan2(toOther.x, toOther.y) * Mathf.Rad2Deg) + 360) % 360;
 
 		Debug.DrawLine (myPos, targetPos, Color.yellow);
 	}
 
 
+public static Vector3 GetDirection(float aAzimuth, float aElevation) {
+	aAzimuth *= Mathf.Deg2Rad;
+	aElevation *= Mathf.Deg2Rad;
+
+	float c = Mathf.Cos(aElevation);
+	return new Vector3(Mathf.Sin(aAzimuth) * c, Mathf.Sin(aElevation), Mathf.Cos(aAzimuth) * c);
+}
 	float atan2Approximation(float y, float x) // http://http.developer.nvidia.com/Cg/atan2.html
 	{
 		float t0, t1, t2, t3, t4;
