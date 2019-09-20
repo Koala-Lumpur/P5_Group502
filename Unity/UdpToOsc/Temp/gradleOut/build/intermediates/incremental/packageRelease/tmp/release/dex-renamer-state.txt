@@ -1,0 +1,4 @@
+#Fri Sep 20 14:15:48 CEST 2019
+base.0=/Users/babo/Documents/GitHub/P5_Group502/Unity/UdpToOsc/Temp/gradleOut/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

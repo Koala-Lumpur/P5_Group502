@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{0C510842-2B13-EA39-EE2D-656139D29755}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControllerManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Tracks/RecieveTracks.cs" Line="99" Column="106" />
+      <File FileName="Assets/Scripts/GetIP.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/ControllerManager.cs" Line="16" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UdpToOsc" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Tracks" expanded="True" />
+                <Node name="ControllerManager.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8fe30241-7a38-43df-b8db-899a2ca57f1f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

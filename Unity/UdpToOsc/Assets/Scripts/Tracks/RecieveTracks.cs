@@ -22,7 +22,7 @@ public class RecieveTracks : MonoBehaviour
     void Start()
     {
         if (!_oscIn) _oscIn = gameObject.AddComponent<OscIn>();
-        _oscIn.Open(7000);
+        _oscIn.Open(8000);
         _oscIn.Map(address1, OnTest1);
     }
 
@@ -39,6 +39,7 @@ public class RecieveTracks : MonoBehaviour
         {
             if (incomingMessage.TryGet(i, ref _incomingText))
             {
+                Debug.Log(_incomingText); 
                 if (first)
                 {
                     tracks.Add(_incomingText);
@@ -95,7 +96,7 @@ public class RecieveTracks : MonoBehaviour
 
     void InstTrack(int i)
     {
-        GameObject newTrack = (GameObject)Instantiate(trackPrefab, new Vector3(-10 + 2*numOfTracks, 1, 0), Quaternion.identity);
+        GameObject newTrack = (GameObject)Instantiate(trackPrefab, new Vector3(-10 + 2*numOfTracks, 1, 10), Quaternion.identity);
         instTracks.Add(newTrack);
     }
 }
