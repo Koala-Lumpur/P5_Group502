@@ -9,8 +9,8 @@ public class Send : MonoBehaviour
 {
 
     public OscOut oscOut;
-    public float myAngle;
-    public float myYAngle;
+    public float xAngle;
+    public float yAngle;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +19,8 @@ public class Send : MonoBehaviour
       if (!oscOut) oscOut = gameObject.AddComponent<OscOut>();
       oscOut.Open(8000,"127.0.0.1");
       oscOut.Send("OSC connection established");
-      myAngle = gameObject.GetComponent<GetAngle>().angle;
-      myYAngle = gameObject.GetComponent<GetAngle>().yAngle;
+      xAngle = gameObject.GetComponent<CalculateAngle>().azimuth;
+      yAngle = gameObject.GetComponent<CalculateAngle>().elevation;
 
     }
 
@@ -30,21 +30,21 @@ public class Send : MonoBehaviour
          oscOut.Send("x: ",transform.position.x);
          oscOut.Send("y: ",transform.position.y);
          oscOut.Send("z: ",transform.position.z);
-         myAngle = getXAngle();
-         myYAngle = getYAngle();
-         oscOut.Send("angle: ", myAngle);
-         oscOut.Send("y angle: ", myYAngle);
+         xAngle = getXAngle();
+         yAngle = getYAngle();
+         oscOut.Send("angle: ", xAngle);
+         oscOut.Send("y angle: ", yAngle);
 
 
     }
 
     float getXAngle() {
-      float angleValue = gameObject.GetComponent<GetAngle>().angle;
+      float angleValue = gameObject.GetComponent<CalculateAngle>().azimuth;
       return angleValue;
     }
 
      float getYAngle() {
-      float yAngleValue = gameObject.GetComponent<GetAngle>().yAngle;
+      float yAngleValue = gameObject.GetComponent<CalculateAngle>().elevation;
       return yAngleValue;
     }
 }
