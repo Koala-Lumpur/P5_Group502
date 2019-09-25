@@ -28,3 +28,5 @@ public class GetIP : MonoBehaviour
         throw new System.Exception("No network adapters with an IPv4 address in the system!");
     }
 }
+
+//192.168.43.193

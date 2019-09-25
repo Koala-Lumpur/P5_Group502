@@ -22,6 +22,7 @@ ScriptsOnlyBuild:
     - OVRScreenFade
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/Scenes/Recieve_track.unity:
     - Class: 1
@@ -41,6 +42,8 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}

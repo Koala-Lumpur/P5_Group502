@@ -1,18 +1,30 @@
 ﻿<Properties StartupConfiguration="{0C510842-2B13-EA39-EE2D-656139D29755}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControllerManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Android/AndroidManifest.xml">
     <Files>
       <File FileName="Assets/Scripts/Tracks/RecieveTracks.cs" Line="99" Column="106" />
-      <File FileName="Assets/Scripts/GetIP.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scripts/ControllerManager.cs" Line="16" Column="9" />
+      <File FileName="Assets/Scripts/GetIP.cs" />
+      <File FileName="Assets/Scripts/ControllerManager.cs" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="27" Column="121" />
+      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRPlayerController.cs" Line="506" Column="15" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UdpToOsc" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Oculus" expanded="True">
+                <Node name="VR" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="Util" expanded="True">
+                      <Node name="OVRPlayerController.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Plugins" expanded="True" />
               <Node name="Scripts" expanded="True">
                 <Node name="Tracks" expanded="True" />
-                <Node name="ControllerManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +34,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8fe30241-7a38-43df-b8db-899a2ca57f1f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6b1d1fea-9506-442b-9792-8dee8c6976a7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
