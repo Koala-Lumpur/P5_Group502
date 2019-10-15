@@ -11,6 +11,7 @@ public class Send : MonoBehaviour
     public OscOut oscOut;
     public float xAngle;
     public float yAngle;
+    public float MyDistance;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class Send : MonoBehaviour
       oscOut.Send("OSC connection established");
       xAngle = gameObject.GetComponent<CalculateAngle>().azimuth;
       yAngle = gameObject.GetComponent<CalculateAngle>().elevation;
+      MyDistance = gameObject.GetComponent<GetDistance>().Distance_;
 
     }
 
@@ -32,8 +34,10 @@ public class Send : MonoBehaviour
          oscOut.Send("z: ",transform.position.z);
          xAngle = getXAngle();
          yAngle = getYAngle();
+         MyDistance = getMyDistance();
          oscOut.Send("angle: ", xAngle);
          oscOut.Send("y angle: ", yAngle);
+         oscOut.Send("Distance", MyDistance);
 
 
     }
@@ -46,5 +50,10 @@ public class Send : MonoBehaviour
      float getYAngle() {
       float yAngleValue = gameObject.GetComponent<CalculateAngle>().elevation;
       return yAngleValue;
+    }
+
+    float getMyDistance() {
+      float getDistance = gameObject.GetComponent<GetDistance>().Distance_;
+      return getDistance;
     }
 }
