@@ -6,7 +6,7 @@
       <File FileName="Assets/Scripts/ControllerManager.cs" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="27" Column="121" />
       <File FileName="Assets/Oculus/VR/Scripts/Util/OVRPlayerController.cs" Line="506" Column="15" />
-      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="21" Column="1" />
+      <File FileName="Assets/Plugins/Android/AndroidManifest.xml" Line="5" Column="113" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
