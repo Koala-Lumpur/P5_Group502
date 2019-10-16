@@ -413,8 +413,11 @@
      <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscInRuntimeUI.cs" />
      <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscOutRuntimeUI.cs" />
      <Compile Include="Assets\Scripts\ControllerManager.cs" />
+     <Compile Include="Assets\Scripts\GetAngle.cs" />
      <Compile Include="Assets\Scripts\GetIP.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Raymanager.cs" />
+     <Compile Include="Assets\Scripts\ShowCameraAngle.cs" />
      <Compile Include="Assets\Scripts\TextLook.cs" />
      <Compile Include="Assets\Scripts\Tracks\GetTrack.cs" />
      <Compile Include="Assets\Scripts\Tracks\RecieveTracks.cs" />

@@ -206,7 +206,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274905205}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.86, y: -2.12, z: 0}
   m_LocalScale: {x: 8.79, y: 11.03, z: 8.05}
   m_Children: []
@@ -381,7 +381,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.2, z: -33.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -481,9 +481,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231563743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.98, y: -0.42, z: -8.75}
-  m_LocalScale: {x: 3.44, y: 3.41, z: 3.98}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.11, z: 15.4}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -544,10 +544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73e4217f89336447bae116001aea92de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1972571447}
-  angle: 278.92548
-  yAngle: 129.57477
-  angleOpt: 98.92548
+  target: {fileID: 963194228}
+  angle: 0.0000035550306
+  yAngle: 180
+  angleOpt: 270
+  camRot: 0
 --- !u!54 &1231563751
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -618,7 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   azimuth: 0
   elevation: 0
-  target: {fileID: 1972571447}
+  target: {fileID: 963194228}
   dir: {x: 0, y: 0, z: 0}
 --- !u!114 &1231563756
 MonoBehaviour:
@@ -648,6 +649,7 @@ GameObject:
   - component: {fileID: 1972571445}
   - component: {fileID: 1972571444}
   - component: {fileID: 1972571448}
+  - component: {fileID: 1972571449}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -722,7 +724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972571443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: -2.51}
+  m_LocalPosition: {x: 0.1, y: 0.39, z: -23.7}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -744,3 +746,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
+--- !u!114 &1972571449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972571443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e4217f89336447bae116001aea92de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 963194228}
+  angle: 180.24174
+  yAngle: 14.381395
+  angleOpt: 90.24175
+  camRot: 0
