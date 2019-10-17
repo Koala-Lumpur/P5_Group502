@@ -392,6 +392,7 @@
      <Compile Include="Assets\OscSimpl\Base\OscBundle.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscMessage.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscPool.cs" />
+     <Compile Include="Assets\OscSimpl\CalculateAngle.cs" />
      <Compile Include="Assets\OscSimpl\Examples\01 GettingStarted\GettingStartedReceiving.cs" />
      <Compile Include="Assets\OscSimpl\Examples\02 ArgumentTypes\ArgumentTypeTest.cs" />
      <Compile Include="Assets\OscSimpl\Examples\03 RuntimeUI\Scripts\TestMessageGenerator.cs" />
@@ -414,6 +415,7 @@
      <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscOutRuntimeUI.cs" />
      <Compile Include="Assets\Scripts\ControllerManager.cs" />
      <Compile Include="Assets\Scripts\GetAngle.cs" />
+     <Compile Include="Assets\Scripts\GetDistance.cs" />
      <Compile Include="Assets\Scripts\GetIP.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Raymanager.cs" />

@@ -380,13 +380,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.00025992567, y: 0.00045677525, z: 0.0017517006, w: 0.99999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.030000001, y: 0.052, z: 0.201}
 --- !u!1 &1231563743
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231563743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.11, z: 15.4}
+  m_LocalPosition: {x: 3.8, y: -0.11, z: 13.1}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a83e4d41d3144efb843adad75b278d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _openOnAwake: 0
+  _openOnAwake: 1
   _udpBufferSize: 8192
   _inspectorMessageEvent:
     m_PersistentCalls:
@@ -545,10 +545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 963194228}
-  angle: 0.0000035550306
-  yAngle: 180
-  angleOpt: 270
-  camRot: 0
+  angle: 343.8761
+  yAngle: 91.658104
+  angleOpt: 253.82375
+  camRot: 0.052290343
 --- !u!54 &1231563751
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -621,6 +621,7 @@ MonoBehaviour:
   elevation: 0
   target: {fileID: 963194228}
   dir: {x: 0, y: 0, z: 0}
+  camRot: 0
 --- !u!114 &1231563756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,7 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 963194228}
-  angle: 180.24174
+  angle: 180.29404
   yAngle: 14.381395
   angleOpt: 90.24175
-  camRot: 0
+  camRot: 0.052290343

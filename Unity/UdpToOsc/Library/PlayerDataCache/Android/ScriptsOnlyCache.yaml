@@ -1,15 +1,20 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CalculateAngle
     - ControllerManager
+    - GetAngle
+    - GetDistance
     - GetIP
     - Oculus.Platform.PlatformSettings
+    - OscOut
     - OvrAvatar
     - OvrAvatarLocalDriver
     - OvrAvatarSettings
     - PlayerMovement
     - Raymanager
     - RecieveTracks
+    - Send
     - ShowCameraAngle
     - TextLook
     Oculus.VR.Editor.dll:
@@ -47,6 +52,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 102
@@ -64,37 +71,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10256}
     - Class: 114
-      Script: {instanceID: 10376}
+      Script: {instanceID: 10378}
     - Class: 114
-      Script: {instanceID: 10628}
+      Script: {instanceID: 10590}
     - Class: 114
-      Script: {instanceID: 10810}
+      Script: {instanceID: 10632}
     - Class: 114
-      Script: {instanceID: 10818}
+      Script: {instanceID: 10686}
     - Class: 114
-      Script: {instanceID: 10830}
+      Script: {instanceID: 10814}
     - Class: 114
-      Script: {instanceID: 10956}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 10960}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11976}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 11986}
+      Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 11980}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 11990}
     - Class: 114
-      Script: {instanceID: 12296}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 16958}
+      Script: {instanceID: 12146}
+    - Class: 114
+      Script: {instanceID: 12210}
+    - Class: 114
+      Script: {instanceID: 12304}
+    - Class: 114
+      Script: {instanceID: 12400}
+    - Class: 114
+      Script: {instanceID: 18540}
+    - Class: 114
+      Script: {instanceID: 19532}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -544,6 +561,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GazeTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 5207a9141b0d2dc2649468c5b45050aa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetAngle
   - hash:
       serializedVersion: 2
       Hash: c62775f7279ea30b4981a8322d28585a
@@ -1446,6 +1469,12 @@ ScriptsOnlyBuild:
     className: VREyeRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 218048bd93e908746781901d78cf0f9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowCameraAngle
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: OscSimpl.Examples
@@ -1530,7 +1559,7 @@ ScriptsOnlyBuild:
     className: TeleportTransitionBlink
   - hash:
       serializedVersion: 2
-      Hash: 9817954e2514a1a97efcae711fdca708
+      Hash: 55039d203bbc50240f3c9c1f98e2e036
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Send
@@ -1632,16 +1661,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: e45dc80ce3891e1a245a238d91b21e07
+      Hash: 717dfb3119d8a7ed76ecc9e0fab6627c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GetAngle
+    className: CalculateAngle
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 09e5ad19b81afd6141e6fed76c81397c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShowCameraAngle
+    className: GetDistance
   platform: 13
   scenePathNames:
   - Assets/Scenes/Recieve_track.unity
