@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1386023739}
-  angle: 346.8959
-  yAngle: 114.77514
+  angle: 346.89594
+  yAngle: 111.06704
   angleOpt: 256.89587
   camRot: 0
   cam: {fileID: 1386023736}
@@ -258,7 +258,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 471009da8fdaa469caef0dbbbc34a5b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,13 +294,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817166360}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.69, y: -0.29, z: 7.26}
+  m_LocalRotation: {x: -0, y: 0.23079455, z: -0, w: 0.97300255}
+  m_LocalPosition: {x: 1.69, y: -0.161, z: 7.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 26.688002, z: 0}
 --- !u!114 &817166366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!102 &1030741841
 TextMesh:
   serializedVersion: 3
@@ -632,8 +632,8 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
+    m_Type: 1
+    m_Resolution: 2
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -682,13 +682,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092244830}
-  m_LocalRotation: {x: 0.09718752, y: -0.0037938708, z: 0.038821958, w: 0.9945014}
+  m_LocalRotation: {x: 0.1692525, y: -0.11318942, z: 0.035611447, w: 0.9784036}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 11.163, y: 0, z: 4.471}
+  m_LocalEulerAnglesHint: {x: 19.832, y: -12.864, z: 1.9110001}
 --- !u!1001 &1386023732
 PrefabInstance:
   m_ObjectHideFlags: 0
