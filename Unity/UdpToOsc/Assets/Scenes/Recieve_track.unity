@@ -168,24 +168,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &494755735 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 168962, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1386023732}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &494755737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494755735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ce4931d3d5254efb8a3e5855324dc13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &817166360
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,15 +199,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817166360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11263354b2eec4a128ddcb4d0cbf02a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1386023739}
-  angle: 346.89594
-  yAngle: 111.06704
-  angleOpt: 256.89587
+  angle: 2.642549
+  yAngle: 197.8787
+  angleOpt: 272.64255
   camRot: 0
   cam: {fileID: 1386023736}
 --- !u!65 &817166362
@@ -295,7 +277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817166360}
   m_LocalRotation: {x: -0, y: 0.23079455, z: -0, w: 0.97300255}
-  m_LocalPosition: {x: 1.69, y: -0.161, z: 7.26}
+  m_LocalPosition: {x: -0.21, y: -0.161, z: 4.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -484,7 +466,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946928874}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b54028a5775ad4e46b9e73ef30e8f995, type: 3}
   m_Name: 
@@ -700,6 +682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVRPlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -752,6 +738,18 @@ PrefabInstance:
       propertyPath: EnableRotation
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: RotationAmount
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: HmdResetsY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: useFixedUpdateForTracking
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
 --- !u!1 &1386023733 stripped
@@ -760,28 +758,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1386023732}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1386023734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1386023732}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1386023735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386023734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b54028a5775ad4e46b9e73ef30e8f995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystick: {x: 0, y: 0}
-  speed: 1
-  centerEye: {fileID: 1386023733}
-  pObject: {fileID: 1386023734}
 --- !u!20 &1386023736 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2015248, guid: ce816f2e6abb0504092c23ed9b970dfd,
