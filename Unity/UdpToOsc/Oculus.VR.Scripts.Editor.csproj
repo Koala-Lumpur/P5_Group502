@@ -60,11 +60,11 @@
      <None Include="Assets\Oculus\VR\Scripts\Editor\OVROverlaySrcRectEditor.shader" />
      <None Include="Assets\Oculus\VR\Scripts\Editor\Oculus.VR.Scripts.Editor.asmdef" />
      <None Include="Assets\Oculus\VR\Scripts\Editor\OVROverlayDestRectEditor.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/babo/GitHub/P5_Group502/Unity/UdpToOsc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/babo/GitHub/P5_Group502/Unity/UdpToOsc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Users/babo/GitHub/P5_Group502/Unity/UdpToOsc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>/Users/babo/GitHub/P5_Group502/Unity/UdpToOsc/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

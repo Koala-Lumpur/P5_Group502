@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Oct 18 11:00:16 CEST 2019
+#Fri Oct 18 11:58:55 CEST 2019
 124.path=lib/armeabi-v7a/libvrapi.so
 60.set=NATIVE_RESOURCE
 52.set=ASSET

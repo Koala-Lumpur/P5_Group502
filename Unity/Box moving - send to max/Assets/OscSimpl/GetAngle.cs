@@ -33,6 +33,7 @@ public class GetAngle : MonoBehaviour
 
 		// Peter - modified the angle "+360" to "+270" so it gets the accurate value in UnityEngine
 		// See the original line below
+		//angle = ((Mathf.Atan2(toOther.z, toOther.x) * Mathf.Rad2Deg) + 270) % 360;
 		angle = ((Mathf.Atan2(toOther.z, toOther.x) * Mathf.Rad2Deg) + 270 + camRot) % 360;
 		//angle = ((Mathf.Atan2(toOther.z, toOther.x) * Mathf.Rad2Deg) + 360) % 360;
 		angleOpt = atan2Approximation(toOther.z, toOther.x) * Mathf.Rad2Deg + 180;

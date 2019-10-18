@@ -1,25 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CalculateAngle
     - ControllerManager
-    - GetAngle
-    - GetDistance
     - GetIP
     - Oculus.Platform.PlatformSettings
-    - OscOut
     - OvrAvatar
     - OvrAvatarLocalDriver
     - OvrAvatarSettings
     - PlayerMovement
+    - Raymanager
     - RecieveTracks
-    - Send
     - ShowCameraAngle
     - TextLook
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
+    - OVRControllerHelper
     - OVRDebugInfo
     - OVRHeadsetEmulator
     - OVRManager
@@ -51,8 +48,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 102
@@ -64,51 +59,43 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9890}
+      Script: {instanceID: 9886}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 10032}
     - Class: 114
-      Script: {instanceID: 10038}
+      Script: {instanceID: 10256}
     - Class: 114
-      Script: {instanceID: 10262}
+      Script: {instanceID: 10376}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10628}
     - Class: 114
-      Script: {instanceID: 10594}
+      Script: {instanceID: 10810}
     - Class: 114
-      Script: {instanceID: 10636}
+      Script: {instanceID: 10818}
     - Class: 114
-      Script: {instanceID: 10690}
+      Script: {instanceID: 10830}
     - Class: 114
-      Script: {instanceID: 10786}
+      Script: {instanceID: 10956}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 11064}
     - Class: 114
-      Script: {instanceID: 10828}
+      Script: {instanceID: 11508}
     - Class: 114
-      Script: {instanceID: 10840}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 10966}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11074}
-    - Class: 114
-      Script: {instanceID: 11518}
-    - Class: 114
-      Script: {instanceID: 11566}
-    - Class: 114
-      Script: {instanceID: 11614}
+      Script: {instanceID: 11976}
     - Class: 114
       Script: {instanceID: 11986}
     - Class: 114
-      Script: {instanceID: 11996}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12150}
+      Script: {instanceID: 12140}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 12308}
-    - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 16958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -204,12 +191,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 09e5ad19b81afd6141e6fed76c81397c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GetDistance
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -566,12 +547,6 @@ ScriptsOnlyBuild:
     className: GazeTarget
   - hash:
       serializedVersion: 2
-      Hash: 5207a9141b0d2dc2649468c5b45050aa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GetAngle
-  - hash:
-      serializedVersion: 2
       Hash: c62775f7279ea30b4981a8322d28585a
     assemblyName: Assembly-CSharp.dll
     namespaceName: Oculus.Platform.Samples.SimplePlatformSample
@@ -708,12 +683,6 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRProgressIndicator
-  - hash:
-      serializedVersion: 2
-      Hash: 717dfb3119d8a7ed76ecc9e0fab6627c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CalculateAngle
   - hash:
       serializedVersion: 2
       Hash: 76056c447cc3c6f6ef56bfcaed33514e
@@ -1478,12 +1447,6 @@ ScriptsOnlyBuild:
     className: VREyeRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 218048bd93e908746781901d78cf0f9b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShowCameraAngle
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: OscSimpl.Examples
@@ -1568,7 +1531,7 @@ ScriptsOnlyBuild:
     className: TeleportTransitionBlink
   - hash:
       serializedVersion: 2
-      Hash: 55039d203bbc50240f3c9c1f98e2e036
+      Hash: 9817954e2514a1a97efcae711fdca708
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Send
@@ -1668,6 +1631,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e45dc80ce3891e1a245a238d91b21e07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetAngle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowCameraAngle
   platform: 13
   scenePathNames:
   - Assets/Scenes/Recieve_track.unity
