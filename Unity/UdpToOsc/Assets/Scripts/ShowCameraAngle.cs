@@ -5,11 +5,12 @@ using UnityEngine;
 public class ShowCameraAngle : MonoBehaviour
 {
 string camRot;
+public Camera cam;
 
-  void Start()
+  void Update()
   {
-      camRot = Camera.main.transform.rotation.eulerAngles.y.ToString();
-      gameObject.GetComponent<TextMesh>().text = camRot.ToString();
+      camRot = cam.transform.rotation.eulerAngles.y.ToString();
+      gameObject.GetComponent<TextMesh>().text = camRot;
       Debug.Log(camRot);
   }
 }

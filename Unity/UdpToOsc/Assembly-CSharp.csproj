@@ -392,6 +392,7 @@
      <Compile Include="Assets\OscSimpl\Base\OscBundle.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscMessage.cs" />
      <Compile Include="Assets\OscSimpl\Base\OscPool.cs" />
+     <Compile Include="Assets\OscSimpl\CalculateAngle.cs" />
      <Compile Include="Assets\OscSimpl\Examples\01 GettingStarted\GettingStartedReceiving.cs" />
      <Compile Include="Assets\OscSimpl\Examples\02 ArgumentTypes\ArgumentTypeTest.cs" />
      <Compile Include="Assets\OscSimpl\Examples\03 RuntimeUI\Scripts\TestMessageGenerator.cs" />
@@ -414,6 +415,7 @@
      <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscOutRuntimeUI.cs" />
      <Compile Include="Assets\Scripts\ControllerManager.cs" />
      <Compile Include="Assets\Scripts\GetAngle.cs" />
+     <Compile Include="Assets\Scripts\GetDistance.cs" />
      <Compile Include="Assets\Scripts\GetIP.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Raymanager.cs" />
@@ -441,9 +443,11 @@
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_PC_SingleComponentExpressive.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarPBRV2Simple.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
+     <None Include="Assets\Shaders &amp; Materials\VertexAnimation.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Expressive\Avatar_Mobile_SingleComponentExpressive.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBSV2.shader" />
+     <None Include="Assets\Shaders &amp; Materials\SimpleDiffuse.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_SingleComponent.shader" />
      <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
      <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarMaterialStateShader.cginc" />

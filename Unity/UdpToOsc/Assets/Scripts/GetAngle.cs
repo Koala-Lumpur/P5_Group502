@@ -14,12 +14,13 @@ public class GetAngle : MonoBehaviour
 	public float yAngle;
 	public float angleOpt;
 	public float camRot;
+	public Camera cam;
 
 	void Update ()
 	{
 		if (!target) return;
 
-		camRot = Camera.main.transform.rotation.eulerAngles.y;
+		camRot = cam.transform.rotation.eulerAngles.y;
 		Debug.Log(camRot);
 
 		var myPos = transform.position;

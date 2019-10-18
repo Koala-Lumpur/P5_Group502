@@ -10,16 +10,20 @@ public Transform target;
 
 public Vector3 dir;
 
+public float camRot;
+
 
 void Update() {
-    
+
     if(!target) return;
+
+    camRot = Camera.main.transform.rotation.eulerAngles.y;
 
     var myPos = transform.position;
 
     Vector3 direction = (myPos - target.position).normalized;
 
-    azimuth = ((Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg) + 360) % 360;
+    azimuth = ((Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg) + 360 - camRot) % 360;
 
     elevation = Mathf.Atan2 (direction.y, Mathf.Sqrt(direction.x * direction.x + direction.z * direction.z)) * Mathf.Rad2Deg;
 

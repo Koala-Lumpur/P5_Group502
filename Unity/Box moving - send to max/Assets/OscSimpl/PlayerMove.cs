@@ -14,8 +14,6 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        if(GameObject.Find("Cube").GetComponent<ClickToActivate>().isActive) {
         float h = Input.GetAxis("Horizontal") * 25;
         float v = Input.GetAxis("Vertical") * 25;
 
@@ -23,7 +21,7 @@ public class PlayerMove : MonoBehaviour
         vel.x = h;
         vel.z = v;
         rb.velocity = vel;
-        }
+
 
     }
 }
