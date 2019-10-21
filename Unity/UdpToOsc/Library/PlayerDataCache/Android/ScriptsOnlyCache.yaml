@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - OVRScreenFade
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/Scenes/Recieve_track.unity:
     - Class: 1
@@ -63,51 +64,51 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9890}
+      Script: {instanceID: 9884}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9964}
     - Class: 114
-      Script: {instanceID: 10038}
+      Script: {instanceID: 10032}
     - Class: 114
-      Script: {instanceID: 10262}
+      Script: {instanceID: 10256}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10376}
     - Class: 114
-      Script: {instanceID: 10594}
+      Script: {instanceID: 10588}
     - Class: 114
-      Script: {instanceID: 10636}
+      Script: {instanceID: 10630}
     - Class: 114
-      Script: {instanceID: 10690}
+      Script: {instanceID: 10684}
     - Class: 114
-      Script: {instanceID: 10786}
+      Script: {instanceID: 10780}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10814}
     - Class: 114
-      Script: {instanceID: 10828}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 10840}
+      Script: {instanceID: 10834}
     - Class: 114
-      Script: {instanceID: 10966}
+      Script: {instanceID: 10960}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11508}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11614}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 11986}
+      Script: {instanceID: 11974}
     - Class: 114
-      Script: {instanceID: 11996}
+      Script: {instanceID: 11984}
     - Class: 114
-      Script: {instanceID: 12150}
+      Script: {instanceID: 12138}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1670,4 +1671,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Recieve_track.unity
-  playerPath: /Users/babo/GitHub/P5_Group502/Unity/UdpToOsc/asd.apk
+  playerPath: /Users/oddur/Oddur/P5/P5_Group502/Unity/UdpToOsc/oddurTry.apk
