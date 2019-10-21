@@ -20,8 +20,7 @@ public class ChangeColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Sphere").GetComponent<ClickToActivate>().isActive) {
-             
+        if (this.GetComponent<ClickToActivate>().isActive) {
             material1.color = Color.red;
  
          } else {

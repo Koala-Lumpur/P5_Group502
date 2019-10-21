@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
 
-        if(GameObject.Find("Sphere").GetComponent<ClickToActivate>().isActive) {
+        if(this.GetComponent<ClickToActivate>().isActive) {
         float h = Input.GetAxis("Horizontal") * moveSensitivity;
         float v = Input.GetAxis("Vertical") * moveSensitivity;
 
