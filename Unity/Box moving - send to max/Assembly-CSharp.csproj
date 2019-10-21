@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>/Applications/Unity/Hub/Editor/2019.2.4f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.sh</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -57,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\ChangeColor.cs" />
      <Compile Include="Assets\ClickToActivate.cs" />
+     <Compile Include="Assets\DisplayText.cs" />
      <Compile Include="Assets\DragObject.cs" />
      <Compile Include="Assets\DragObject2.cs" />
      <Compile Include="Assets\DragObject3.cs" />
