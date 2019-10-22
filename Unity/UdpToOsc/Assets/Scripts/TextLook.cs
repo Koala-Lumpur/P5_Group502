@@ -9,12 +9,12 @@ public class TextLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(transform.position - Camera.main.transform.position);
+        transform.LookAt(Camera.main.transform.position);
     }
 }
