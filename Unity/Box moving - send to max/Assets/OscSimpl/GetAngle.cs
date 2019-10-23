@@ -15,18 +15,20 @@ public class GetAngle : MonoBehaviour
 	public float yAngle;
 	public float angleOpt;
 	public float camRot;
+	public float DistanceL;
+	public float DistanceR;
 
 
 	// Below can be uncommented for further work
-	/* 
+	// /* 
 	public float distanceOfSides;
 	Vector3 center;
 	Vector3 leftSide;
 	Vector3 rightSide;
-*/
+// */
 
 	void Start() {
-		// rend = this.GetComponent<Renderer>();
+		rend = this.GetComponent<Renderer>();
 	}
 	void Update ()
 	{
@@ -40,7 +42,7 @@ public class GetAngle : MonoBehaviour
 
 		// !! VARIABLES TO GET THE EDGES OF OBJECTS !!
 
-		/* 
+		// /* 
 		center = rend.bounds.center;
 		float radius = rend.bounds.extents.magnitude;
 		
@@ -49,7 +51,7 @@ public class GetAngle : MonoBehaviour
 
 		rightSide = center;
 		rightSide.x = center.x + (radius/2);
-		*/
+		// */
 
 		
 		// myPos.y = 0;
@@ -69,18 +71,19 @@ public class GetAngle : MonoBehaviour
 
 
 		// !! TEST TO CALCULATE DISTANCE OF SIDES !!
-		// distanceOfSides = ((Mathf.Atan2(toOther.z, toOther.x) * Mathf.Rad2Deg) + 270 + camRot) % 360;
+		DistanceL = Vector3.Distance(target.transform.position, leftSide);
+		DistanceR = Vector3.Distance(target.transform.position, rightSide);
 
 
 
-		yAngle = ((Mathf.Atan2(toOther.x, toOther.y) * Mathf.Rad2Deg) + 270 + camRot) % 360;
+		yAngle = ((Mathf.Atan2(toOther.x, toOther.y) * Mathf.Rad2Deg) + 270) % 360;
 
 		Debug.DrawLine (myPos, targetPos, Color.yellow);
 
 		// !! DRAW LINES TO EDGES OF OBJECTS, NOT CENTER !!
 
-		// Debug.DrawLine(targetPos, leftSide, Color.red);
-		// Debug.DrawLine(targetPos, rightSide, Color.red);
+		Debug.DrawLine(targetPos, leftSide, Color.red);
+		Debug.DrawLine(targetPos, rightSide, Color.red);
 	}
 
 

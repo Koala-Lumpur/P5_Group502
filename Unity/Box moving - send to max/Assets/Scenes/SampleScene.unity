@@ -504,6 +504,8 @@ MonoBehaviour:
   xAngle: 0
   yAngle: 0
   MyDistance: 0
+  DistanceL: 0
+  DistanceR: 0
 --- !u!114 &1231563749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,9 +548,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 963194228}
   angle: 336.0898
-  yAngle: 91.12531
+  yAngle: 1.1253114
   angleOpt: 246.0376
   camRot: 0.052290343
+  DistanceL: 13.180241
+  DistanceR: 14.579381
+  distanceOfSides: 0
 --- !u!54 &1231563751
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -763,6 +768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 963194228}
   angle: 180.29404
-  yAngle: 14.381395
+  yAngle: 284.3814
   angleOpt: 90.24175
   camRot: 0.052290343
+  DistanceL: 23.792995
+  DistanceR: 23.811188
+  distanceOfSides: 0
