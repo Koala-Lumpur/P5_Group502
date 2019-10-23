@@ -46,8 +46,8 @@ public class Send : MonoBehaviour
          oscOut.Send("angle: ", xAngle);
          oscOut.Send("y angle: ", yAngle);
         //  oscOut.Send("Distance", MyDistance);
-         oscOut.Send("Left", DistanceL);
-         oscOut.Send("Right", DistanceR);
+         oscOut.Send("Left: ", DistanceL);
+         oscOut.Send("Right: ", DistanceR);
 
 
     }
