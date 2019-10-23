@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSensitivity: 8
-  cam: {fileID: 0}
+  cam: {fileID: 235418813}
 --- !u!54 &1298259432
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSensitivity: 8
-  cam: {fileID: 0}
+  cam: {fileID: 235418813}
 --- !u!54 &1974731920
 Rigidbody:
   m_ObjectHideFlags: 0
