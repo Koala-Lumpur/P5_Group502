@@ -5,7 +5,7 @@ using UnityEngine;
 public class ClickToActivate : MonoBehaviour
 {
 
-    public GameObject myObject;
+    // public GameObject myObject;
     bool textActive = false;
     Color[] colors = new Color[] {Color.blue, Color.red};
     private int currentColor, length;

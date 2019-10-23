@@ -12,6 +12,8 @@ public class Send : MonoBehaviour
     public float xAngle;
     public float yAngle;
     public float MyDistance;
+    public float DistanceL;
+    public float DistanceR;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,8 @@ public class Send : MonoBehaviour
       xAngle = gameObject.GetComponent<CalculateAngle>().azimuth;
       yAngle = gameObject.GetComponent<CalculateAngle>().elevation;
       MyDistance = gameObject.GetComponent<GetDistance>().Distance_;
+      DistanceL = gameObject.GetComponent<GetAngle>().DistanceL;
+      DistanceR = gameObject.GetComponent<GetAngle>().DistanceR;
 
     }
 
@@ -32,12 +36,18 @@ public class Send : MonoBehaviour
          oscOut.Send("x: ",transform.position.x);
          oscOut.Send("y: ",transform.position.y);
          oscOut.Send("z: ",transform.position.z);
+
          xAngle = getXAngle();
          yAngle = getYAngle();
          MyDistance = getMyDistance();
+         DistanceL = getLeftDistance();
+         DistanceR = getRightDistance();
+
          oscOut.Send("angle: ", xAngle);
          oscOut.Send("y angle: ", yAngle);
-         oscOut.Send("Distance", MyDistance);
+        //  oscOut.Send("Distance", MyDistance);
+         oscOut.Send("Left", DistanceL);
+         oscOut.Send("Right", DistanceR);
 
 
     }
@@ -55,5 +65,15 @@ public class Send : MonoBehaviour
     float getMyDistance() {
       float getDistance = gameObject.GetComponent<GetDistance>().Distance_;
       return getDistance;
+    }
+
+    float getLeftDistance() {
+      float leftDistance = gameObject.GetComponent<GetAngle>().DistanceL;
+      return leftDistance;
+    }
+
+    float getRightDistance() {
+      float rightDistance = gameObject.GetComponent<GetAngle>().DistanceR;
+      return rightDistance;
     }
 }

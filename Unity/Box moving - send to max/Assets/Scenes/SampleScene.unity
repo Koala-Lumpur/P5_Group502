@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.496413, b: 0.5748175, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -481,13 +481,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231563743}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8, y: -0.11, z: 13.1}
+  m_LocalRotation: {x: -0, y: 0.00080591446, z: -0, w: 0.9999997}
+  m_LocalPosition: {x: 5.6, y: -0.11, z: 12.6}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.09200001, z: 0}
 --- !u!114 &1231563748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +504,8 @@ MonoBehaviour:
   xAngle: 0
   yAngle: 0
   MyDistance: 0
+  DistanceL: 0
+  DistanceR: 0
 --- !u!114 &1231563749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,10 +547,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 963194228}
-  angle: 343.8761
-  yAngle: 91.658104
-  angleOpt: 253.82375
+  angle: 336.0898
+  yAngle: 1.1253114
+  angleOpt: 246.0376
   camRot: 0.052290343
+  DistanceL: 13.180241
+  DistanceR: 14.579381
+  distanceOfSides: 0
 --- !u!54 &1231563751
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -593,6 +598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b4cd4c5cfad14e2584d2389b904f8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSensitivity: 15
+  cam: {fileID: 0}
 --- !u!114 &1231563754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 963194228}
   angle: 180.29404
-  yAngle: 14.381395
+  yAngle: 284.3814
   angleOpt: 90.24175
   camRot: 0.052290343
+  DistanceL: 23.792995
+  DistanceR: 23.811188
+  distanceOfSides: 0

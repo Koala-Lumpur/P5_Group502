@@ -10,19 +10,50 @@ using System.Collections;
 public class GetAngle : MonoBehaviour
 {
 	public Transform target;
+	Renderer rend;
 	public float angle;
 	public float yAngle;
 	public float angleOpt;
 	public float camRot;
+	public float DistanceL;
+	public float DistanceR;
 
+
+	// Below can be uncommented for further work
+	// /* 
+	public float distanceOfSides;
+	Vector3 center;
+	Vector3 leftSide;
+	Vector3 rightSide;
+// */
+
+	void Start() {
+		rend = this.GetComponent<Renderer>();
+	}
 	void Update ()
 	{
 		if (!target) return;
 
 		camRot = Camera.main.transform.rotation.eulerAngles.y;
-		Debug.Log(camRot);
+		// Debug.Log(camRot);
 
 		var myPos = transform.position;
+
+
+		// !! VARIABLES TO GET THE EDGES OF OBJECTS !!
+
+		// /* 
+		center = rend.bounds.center;
+		float radius = rend.bounds.extents.magnitude;
+		
+		leftSide = center;
+		leftSide.x = center.x - (radius/2);
+
+		rightSide = center;
+		rightSide.x = center.x + (radius/2);
+		// */
+
+		
 		// myPos.y = 0;
 
 		var targetPos = target.position;
@@ -39,11 +70,20 @@ public class GetAngle : MonoBehaviour
 		//angleOpt = Camera.main.transform.rotation.y * atan2Approximation(toOther.z, toOther.x) * Mathf.Rad2Deg + 180;
 
 
+		// !! TEST TO CALCULATE DISTANCE OF SIDES !!
+		DistanceL = Vector3.Distance(target.transform.position, leftSide);
+		DistanceR = Vector3.Distance(target.transform.position, rightSide);
 
 
-		yAngle = ((Mathf.Atan2(toOther.x, toOther.y) * Mathf.Rad2Deg) + 360) % 360;
+
+		yAngle = ((Mathf.Atan2(toOther.x, toOther.y) * Mathf.Rad2Deg) + 270) % 360;
 
 		Debug.DrawLine (myPos, targetPos, Color.yellow);
+
+		// !! DRAW LINES TO EDGES OF OBJECTS, NOT CENTER !!
+
+		Debug.DrawLine(targetPos, leftSide, Color.red);
+		Debug.DrawLine(targetPos, rightSide, Color.red);
 	}
 
 
