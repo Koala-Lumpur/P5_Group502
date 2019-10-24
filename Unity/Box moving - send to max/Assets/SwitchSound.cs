@@ -18,7 +18,14 @@ public class SwitchSound : MonoBehaviour
     void OnMouseDown()
     {
         buttonPressed = !buttonPressed;
+        
 
+    }
+    
+    void OnMouseUp(){
+        
+        buttonPressed = !buttonPressed;
+        
     }
 
     void update() {
