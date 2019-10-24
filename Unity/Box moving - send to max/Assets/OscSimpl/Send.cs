@@ -14,6 +14,7 @@ public class Send : MonoBehaviour
     public float MyDistance;
     public float DistanceL;
     public float DistanceR;
+    public bool switchSounds;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class Send : MonoBehaviour
       MyDistance = gameObject.GetComponent<GetDistance>().Distance_;
       DistanceL = gameObject.GetComponent<GetAngle>().DistanceL;
       DistanceR = gameObject.GetComponent<GetAngle>().DistanceR;
+      switchSounds = gameObject.GetComponent<SwitchSound>().buttonPressed;
 
     }
 
@@ -42,12 +44,14 @@ public class Send : MonoBehaviour
          MyDistance = getMyDistance();
          DistanceL = getLeftDistance();
          DistanceR = getRightDistance();
+         switchSounds = getSwitchSound();
 
          oscOut.Send("angle: ", xAngle);
          oscOut.Send("y angle: ", yAngle);
         //  oscOut.Send("Distance", MyDistance);
          oscOut.Send("Left", DistanceL);
          oscOut.Send("Right", DistanceR);
+         oscOut.Send("Sound", switchSounds);
 
 
     }
@@ -75,5 +79,10 @@ public class Send : MonoBehaviour
     float getRightDistance() {
       float rightDistance = gameObject.GetComponent<GetAngle>().DistanceR;
       return rightDistance;
+    }
+
+    bool getSwitchSound() {
+      bool soundSource = gameObject.GetComponent<SwitchSound>().buttonPressed;
+      return soundSource;
     }
 }

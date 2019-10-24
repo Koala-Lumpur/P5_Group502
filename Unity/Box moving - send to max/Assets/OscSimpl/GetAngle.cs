@@ -10,7 +10,8 @@ using System.Collections;
 public class GetAngle : MonoBehaviour
 {
 	public Transform target;
-	Renderer rend;
+	public Transform myObject;
+	Renderer rend, rend2;
 	public float angle;
 	public float yAngle;
 	public float angleOpt;
@@ -25,10 +26,13 @@ public class GetAngle : MonoBehaviour
 	Vector3 center;
 	Vector3 leftSide;
 	Vector3 rightSide;
+
+	Vector3 myCenter;
 // */
 
 	void Start() {
-		rend = this.GetComponent<Renderer>();
+		rend = myObject.GetComponent<Renderer>();
+		rend2 = target.GetComponent<Renderer>();
 	}
 	void Update ()
 	{
@@ -51,6 +55,8 @@ public class GetAngle : MonoBehaviour
 
 		rightSide = center;
 		rightSide.x = center.x + (radius/2);
+
+		myCenter = rend2.bounds.center;
 		// */
 
 		
@@ -82,8 +88,8 @@ public class GetAngle : MonoBehaviour
 
 		// !! DRAW LINES TO EDGES OF OBJECTS, NOT CENTER !!
 
-		Debug.DrawLine(targetPos, leftSide, Color.red);
-		Debug.DrawLine(targetPos, rightSide, Color.red);
+		Debug.DrawLine(myCenter, leftSide, Color.red);
+		Debug.DrawLine(myCenter, rightSide, Color.red);
 	}
 
 

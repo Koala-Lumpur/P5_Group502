@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>/Applications/Unity/Hub/Editor/2019.2.4f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.sh</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -134,6 +132,7 @@
      <Compile Include="Assets\OscSimpl\Xtras\RuntimeUI\OscOutRuntimeUI.cs" />
      <Compile Include="Assets\PlayerMove.cs" />
      <Compile Include="Assets\rotateCameraWithMouse.cs" />
+     <Compile Include="Assets\SwitchSound.cs" />
      <None Include="Assets\OscSimpl\Docs\Versions.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/oddur/Oddur/P5/P5_Group502/Unity/Box moving - send to max/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
